@@ -1,0 +1,19 @@
+﻿<Window x:Class="PetShopManagement.EditAnimalTypeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Редактировать вид" Height="200" Width="400">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="0" Content="Название вида:"/>
+        <TextBox Grid.Row="0" x:Name="TypeNameTextBox" Width="300" HorizontalAlignment="Left" Margin="100,0,0,10"/>
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button x:Name="SaveButton" Content="Сохранить" Width="80" Margin="5" Click="SaveButton_Click"/>
+            <Button x:Name="CancelButton" Content="Отмена" Width="80" Margin="5" Click="CancelButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
